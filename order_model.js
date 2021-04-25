@@ -9,6 +9,12 @@ var order_schema = mongoose.Schema(
     user: {
       type: String,
     },
+    comment: {
+      type: String,
+    },
+    contact: {
+      type: String,
+    },
 
     price: {
       type: String,
