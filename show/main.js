@@ -1,8 +1,8 @@
 let apiOrder = "http://localhost:5000/api/order";
 let setUser = document.querySelector(".set-user"); // show ww,as/ak
-let setMenu = document.querySelector(".set-menu"); // show order
 let setComment = document.querySelector(".set-comment"); // ขอเผ็ดๆ
 let setContact = document.querySelector(".set-contact"); // 09854022255
+let setPrice = document.querySelector(".set-price"); // 09854022255
 let setClick = document.querySelector(".set-click");
 let clickNext = document.querySelector(".click-next");
 
@@ -18,6 +18,7 @@ async function getOurder() {
     setUser.innerHTML = orderObj.data[i].user;
     setClick.innerHTML = i + 1;
     show_menu(i); // table
+    setPrice.innerHTML = orderObj.data[i].price;
     setComment.innerHTML = orderObj.data[i].comment;
     setContact.innerHTML = orderObj.data[i].contact;
     i++;
