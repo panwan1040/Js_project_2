@@ -1,4 +1,4 @@
-let apiOrder = "http://localhost:5000/api/order";
+let apiOrder = "http://getapi-project-2.app.ruk-com.cloud/api/order";
 let setUser = document.querySelector(".set-user"); // show ww,as/ak
 let setComment = document.querySelector(".set-comment"); // ขอเผ็ดๆ
 let setContact = document.querySelector(".set-contact"); // 09854022255
