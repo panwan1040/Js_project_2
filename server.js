@@ -1,16 +1,9 @@
-var http = require("http");
-var fs = require("fs");
+const http = require("http");
+const fs = require("fs");
 
-const PORT = 8080;
-
-fs.readFile("./index.html", function (err, html) {
-  if (err) throw err;
-
-  http
-    .createServer(function (request, response) {
-      response.writeHeader(200, { "Content-Type": "text/html" });
-      response.write(html);
-      response.end();
-    })
-    .listen(PORT);
+const server = http.createServer((req, res) => {
+  res.writeHead(200, { "content-type": "text/html" });
+  fs.createReadStream("index.html").pipe(res);
 });
+
+server.listen(process.env.PORT || 3000);
