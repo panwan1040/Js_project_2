@@ -1,66 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="/styleforindog.css">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Show Order</title>
-    
+    <script src="https://unpkg.com/vue"></script>
   </head>
   <body>
-  
+    <div>
       <!-- username  -->
-      <div class="table-users" style="font-family: 'Kanit', sans-serif;">
-      <div class="header" ><h4>รายการอาหารที่สั่งของคุณ <span style="color:rgb(132, 226, 255)" class="set-user"></span> </h4></div>
-      
-    
-    <!-- ตาราง เมนู + จำนวน -->
-    <table cellspacing="0">
-
-    <tr>
-      <td>รายการอาหาร </td>
-   </tr>
-
-   <tr id="showTable">
-     <td ></td>
-    </tr>
-
-    <tr>
-    <td>ราคา <span class="set-price"></span> บาท</td>
-  </tr>
-
-</table></div>
-    <!-- คอมเม้น-ติดต่อ -->
-
-    <div class="table-users" style="font-family: 'Kanit', sans-serif;">
-  
-   
-      <table cellspacing="0">
-        
-         <tr>
-            <td class="set-comment" ></td>
-    
-         </tr>
-         <tr>
-            <td class="set-contact" ></td>
-         </tr>
-      </table>
-  </div>
-    
-<div>
-      <!-- ปุ่มกดเพื่อไปออเดอร์อื่น -->
-      <div class="frame" >
-        <button style="font-family: 'Kanit', sans-serif;width: 200px;" class="custom-btn btn-11 click-next">รายการถัดไป<div class="dot"></div></button>
-      </div>
-      <center><h1 class="set-click"></h1></center>
+      <h1>show user =><span class="set-user"></span></h1>
     </div>
+
+    <div>
+      <!-- ปุ่มกดเพื่อไปออเดอร์อื่น -->
+      <button class="click-next">click</button>
+      <span class="set-click"></span>
+    </div>
+    <!-- ตาราง เมนู + จำนวน -->
+    <div class="forTable" id="showTable"></div>
+    <span class="set-price"></span> บาท
+    <!-- คอมเม้น-ติดต่อ -->
+    <div>
+      <span class="set-comment"></span>
+      <span class="set-contact"></span>
+    </div>
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
-<div class="ocean">
-  <div class="wave"></div>
-  <div class="wave"></div>
-</div>
