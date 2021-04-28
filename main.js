@@ -63,7 +63,7 @@ async function getOurder() {
     });
     tbl.appendChild(tblBody);
     body.appendChild(tbl);
-    tbl.setAttribute("border", "1");
+    tbl.setAttribute("border", "0");
   }
 
   clickNext.addEventListener("click", nextObj);
